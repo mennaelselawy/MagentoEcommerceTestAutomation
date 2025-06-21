@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Magento Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="User Flow Tests(failed)" verbose="0">
+    <classes>
+      <class name="checkout.CheckOutTests">
+        <methods>
+          <include name="testInvalidShippingInfoValidation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- checkout.CheckOutTests -->
+      <class name="reviews.ReviewsTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testSubmittedReviewAppearsInReviewsTab"/>
+        </methods>
+      </class> <!-- reviews.ReviewsTests -->
+    </classes>
+  </test> <!-- User Flow Tests(failed) -->
+</suite> <!-- Failed suite [Magento Automation Suite] -->
